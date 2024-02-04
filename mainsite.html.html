@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=devcie-width , initial-scale=1.0">
+    <title>Fitness and Sports</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            /* background-image: url("portcomp2-2/bgimage.jpg"); */
+            position: relative;
+            padding: 0 5%;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 33);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+
+            color: rgb(149, 149, 236);
+        }
+
+
+        .left {
+            font-size: 2rem;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        .header-edit{
+            border-radius:2%;  
+            border-color: rgb(190, 186, 186);
+            border-style: solid;
+            border-width: 5;
+        }
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: cneter;
+            margin: 130px 0
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+
+            font-size: 2rem;
+
+        }
+
+        .leftsection .btn {
+            padding: 12px;
+            background-color: rgb(24, 23, 23);
+            color: white;
+            border: 2px solid white;
+            border-radius: 10%;
+            font-size: 20px;
+            cursor: pointer;
+
+        }
+
+        .leftsection .buttons {
+            padding: 20px;
+        }
+
+        .btn:hover {
+            box-shadow: 0 0 10px whitesmoke;
+        }
+
+        .leftsection .btn a {
+            color: white;
+        }
+
+        .rightsection video {
+            width: 100%;
+            border-radius:50%;
+            height: auto;
+        }
+        .rightsection video:hover{
+            opacity: .5;
+        }
+
+        .rightsection {
+            margin: 5px 0;
+        }
+
+        .purple {
+            color: rgb(1, 1, 1);
+            font-weight:bold;
+        }
+
+        #element {
+            color: rgb(78, 4, 148);
+            font-weight:bold;
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        main hr {
+            border: 0;
+            background-color: rgb(172, 129, 211);
+            height: 1.5px;
+            margin: 60px 84px;
+        }
+
+        .secondsection h1 {
+            font-size: 2rem;
+        }
+
+        .text-gray {
+            coloR: gray;
+        }
+
+        .secondsection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 50px 0;
+            display: flex;
+        }
+
+        .secondsection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 150px;
+        }
+
+        .image-top {
+            width: 50px;
+            position: relative;
+            top: -32px;
+
+            left: -9px;
+        }
+
+        .image-rph {
+            width: 50px;
+            position: relative;
+            top: -60px;
+            left: -9px;
+        }
+
+        .image-optica {
+            width: 50px;
+            position: relative;
+            top: -60px;
+            left: -9px;
+        }
+
+        .title-rph {
+            position: relative;
+            top: 50px;
+            width: 150px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            width: 150px;
+            color: white;
+            font-size: 9px;
+        }
+
+        .rph-desc {
+            position: relative;
+            top: 59px;
+            width: 150px;
+            color: white;
+            font-size: 9px;
+        }
+
+        footer {
+            background-color: rgba(29, 28, 28, 0.901);
+
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer   ul {
+            list-style: none;
+        }
+        
+        
+        .footer-second .content:hover{
+            color:rgb(154, 96, 208);
+        }
+        .footer-third .content:hover{
+            color:rgb(154, 96, 208);
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+        .footer .footer-first{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 2rem;
+        }
+
+        .content {
+            color: gray;
+            font-family: sans-serif;
+        }
+
+        .back-video {
+            position:absolute;
+            right: 0;
+            bottom: 0;
+            z-index:-5;
+            top: -1px;
+            height: 1500px;
+            width: auto;
+            opacity: 5;
+        
+        }
+
+        .hoverkliye:hover {
+            opacity: .10;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+    <video autoplay loop muted play-inline class="back-video">
+            <source src="./portcomp2-2/runvideo.mp4" type="video/mp4"> 
+
+         </video> 
+         
+        <header >
+            <nav class="header-edit">
+                <div class="left"> &#153 <b>SportsFit</b> </div>
+                <div class="right">
+                    <ul>
+                        <li> <a href="/">Home </a></li>
+                        <li> <a href="/">About </a></li>
+                        <li> <a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                        <li> <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Contact Us </a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="firstsection">
+                <div class="leftsection">Train like an Olympian,
+                    <div> Dominate like a Pro</div>
+                    <div>and conquer your goals with <span class="purple">SportsFit</span></div>
+                    <span id="element"></span>
+                   
+
+                </div>
+                <div class="rightsection">
+                    <video autoplay loop muted play-inline class="doctor-video">
+                        <source src="doctorvdeo.mp4" type="video/mp4">
+                    </video>
+            
+                </div>
+            </section>
+            <hr>
+            <section class="secondsection">
+                <span class="text-gray">various options</span>
+                <h1>Various Fields to Include</h1>
+                <div class="box">
+                    <div class="vertical">
+                        
+                    </div>
+
+
+
+                    <div class="vertical">
+                       
+                    </div>
+
+
+
+                    <div class="vertical">
+                        
+                    </div>
+
+
+
+                    <div class="vertical">
+                       
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Clueless Coders' Innovation</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li><b>Emails</b>-<div class="content"><i>
+                        <ul>
+                            <li></li>
+                            <li>                            </li>
+                            <li></li>
+                        </div>
+                    </li></ul></div>
+                    <div class="footer-third">
+                        <ul>
+                            <li><b>Instagrams-</b><div class="content">
+                                <ul>
+                                    
+                                </ul>
+                            </div></li>
+                        </ul>
+                    </div>
+            </div>
+        
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; www.sportsfit.com | All rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>Turn Sweat Into Strength', '<i>Efforts into Triumph', '<i>Dreams into Reality'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>

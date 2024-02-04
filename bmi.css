@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracking</title>
+    <link rel="stylesheet" href="bmi.css">
+</head>
+<body>
+    <div class = "container">
+        <div class="form-box">
+            <form name = "fitness" method = "get" action = "suggestion.html">
+                <caption><h2>BMI Calculator</h2></caption>
+                <table>
+                    <tr>
+                        <td>Weight (in kg): </td>
+                        <div class = "input-field">
+                            <td><input type = "number" name = "weight" step = "0.01" placeholder = "Enter Weight" required></td>
+                        </div>
+                    </tr>
+                    <tr>
+                        <td>Height (in m): </td>
+                        <div class = "input-field">
+                            <td><input type = "number" name = "height" step = "0.01" placeholder = "Enter Height" required></td>
+                        </div>
+                    </tr>
+                </table>
+                <div class = "btn-field">
+                    <td><input type = "button" value = "Calculate BMI" class = "button" onClick = "calculateBMI()"></td>
+                </div>
+                <br> 
+                <p id = "result"></p>
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        function calculateBMI(){
+            weight = parseFloat(document.fitness.weight.value);
+            height = parseFloat(document.fitness.height.value);
+            var bmi = weight / (height * height);
+            if (bmi < 18.5){
+                alert("BMI: " + bmi.toFixed(2) + "\nYou are underweight but don't worry, try to follow our mentioned Fitness Plan.");
+            }
+            else if (bmi >= 18.5 && bmi < 25){
+                alert("BMI: " + bmi.toFixed(2) + "\nYou are normal and to remain fit, try to follow our mentioned Fitness Plan.");
+            }
+            else{
+                alert("BMI: " + bmi.toFixed(2) + "\nYou are overweight but don't worry, try to follow our mentioned Fitness Plan.");
+            }
+            var newWindow = window.open("suggestions.html", "_blank");
+        }
+    </script>     
+</body>
+</html>

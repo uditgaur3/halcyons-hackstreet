@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caloriepart</title>
+    <link rel="stylesheet" href="project2.css">
+    <style>
+        body
+        {
+            color : white;
+        }
+    </style>
+    <script>
+function fun()
+{
+
+    var calorie=parseInt(document.getElementById("calorie").value);
+
+    if(calorie<2400)
+    {
+        alert("you have less calories.calories should be between 2400-3000");
+        return false;
+    }
+    if(calorie>3000)
+    {
+        alert("you have high calories .calrories should be between 2400-3000");
+        return false;
+    }
+
+
+    var waterintake=parseInt(document.getElementById("water").value);
+    if(waterintake<3)
+    {
+        alert(" the commonly recommended daily water intake is approximately 2 liters");
+        return false;
+
+    }
+
+    if(waterintake>5)
+    {
+        alert("Excessive water consumption can dilute the levels of sodium in your blood. should drink  between 3 to 5");
+        return false;
+    }
+
+    var sleep=parseInt(document.getElementById("sleep").value);
+    if(sleep<7)
+    {
+        alert("it is recommeneded to sleep atleast 7 hours");
+        return false;
+    }
+
+    if(sleep>10)
+    {
+        alert("it is not recommended to sleep more than 10 hours");
+        return false;
+    }
+}
+
+   </script>
+</head>
+<body background="bgimage.jpg" class="imag">
+    
+    <div class="container1">
+        <div class="form-box1">
+   
+            <div class="input-field">
+
+    <form name="fitness2" method="get" onsubmit="return fun()" id="p" >
+        <caption><h2>FITNESS CHECKER</h2></caption>
+      
+      
+    Enter Calories : <br><br>
+    <input type="text" id="calorie" value=" "><br><br>
+    Enter Water intake (litres):
+    <br> <input type="text" id="water" value=" "><br><br>
+    Enter Sleephours (hrs):
+    <br> <input type="text" id="sleep" value=" "><br><br>
+    <input type="submit" value="submit" class="button"></div>
+    </form></div></div></div>
+
+    <br><br><a href = "index.html"><h1>Go Back to Main Page...</h1></a><br>
+
+</body>
+</html>
